@@ -112,6 +112,12 @@ Customised placeholder character used to fill in editable parts of the pattern.
 
 See the [inputmask-core docs](https://github.com/insin/inputmask-core#placeholderchar--string) for details.
 
+### `isRevealingMask`: `bool`
+
+An optional property that, if true, progressively shows the mask as input is entered.
+
+See the [inputmask-core docs](https://github.com/insin/inputmask-core#placeholderchar--string) for details.
+
 ### `value` : `string`
 
 A default value for the mask.

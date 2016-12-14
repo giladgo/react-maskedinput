@@ -221,12 +221,13 @@ describe('MaskedInput', () => {
     }
     expect.spyOn(console, 'error')
     render({mask: defaultMask, value: '',
-            placeholderChar: 'X', formatCharacters: {A: null}})
+            placeholderChar: 'X', formatCharacters: {A: null}, isRevealingMask: true})
     expect(console.error).toNotHaveBeenCalled()
     console.error.restore()
     let input = ReactDOM.findDOMNode(ref)
     expect(input.getAttribute('placeholderChar')).toNotExist()
     expect(input.getAttribute('formatCharacters')).toNotExist()
+    expect(input.getAttribute('isRevealingMask')).toNotExist()
     cleanup(el)
   })
 
